@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* Core Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}body {
+    background: linear-gradient(135deg, #00ff00 0%, #000000 100%);
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    padding: 15px;
+}
+.login-box {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.logo-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.branding h1 {
+    color: #000000;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    align-self: center;
+}
+
+.branding p {
+    color: #666;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
+
+/* Input Styles */
+.input-field {
+    margin-bottom: 20px;
+}
+
+.input-field label {
+    display: block;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.input-field input:focus {
+    border-color: #000000;
+    outline: none;
+    box-shadow: 0 0 8px rgba(42, 82, 152, 0.2);
+}
+
+/* Row for checkbox and link */
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    margin-bottom: 25px;
+}
+
+.options a {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Professional Button */
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    background: #000000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background: #162d5a;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #000000;
+}
+
+/* Responsive Tablet/Mobile Tweaks */
+@media (max-width: 480px) {
+    .login-box {
+        padding: 30px 20px;
+    }
+    
+    .branding h1 {
+        font-size: 1.5rem;
+    }
+}
+
+
+    </style>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTSS | System Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="btss-wra">
+        <div class="login-box">
+            <div class="branding">
+                <div class="logo-icon"></div>
+                <h1>BTSS SYSTEM</h1>
+                <p>BTSS System</p>
+            </div>
+            
+            <form action="#">
+                <div class="input-field">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter Your username" required>
+                </div>
+
+                <div class="input-field">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="••••••••" required>
+                </div>
+
+                <div class="options">
+                    <label><input type="checkbox"> Remember Device</label>
+                    <a href="#">Forgot Access?</a>
+                </div>
+
+                <button onclick="submit" =class="login-btn">Secure Login</button>
+            </form>
+            
+            <footer>
+                &copy; 2026 BTSS Management Portal
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
